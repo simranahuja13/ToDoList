@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="todo">
+        <div class="header">
+            <h1>Todo List   </h1>
+            <input type="text" class="todo-input" placeholder="Type a task">
+            <button class="add-btn">Add</button>
+        </div>
+        <div class="todo-list">
+            <h3>LIST OF TASKS</h3>
+            <p class="p-info">The list is empty</p>
+            <ul>
+                <!-- <li id="test1" class="tasks-completed">
+                    Test 1
+                    <div class="icons">
+                        <button class="complete"><i class="fas fa-check"></i>
+                        </button>
+                        <button class="edit">EDIT</button>
+                        <button class="delete"><i class="fas fa-times"></i></button>
+                    </div>
+                </li>
+
+                <li id="test2" >
+                    Test 2
+                    <div class="icons">
+                        <button class="complete"><i class="fas fa-check"></i>
+                        </button>
+                        <button class="edit">EDIT</button>
+                        <button class="delete"><i class="fas fa-times"></i></button>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="edit-popup">
+        <h3>Edit Task: </h3>
+        <div class="edit-popup-body">
+            <input type="text" class="edit-popup-input" placeholder="Edit your task">
+            <button class="submit-btn" id="btn1">Submit</button>
+            <button class="cancel-btn" id="btn2">Cancel</button>
+        </div>
+    </div>
+    <script src="./style.js"></script>
+</body>
+</html>

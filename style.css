@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    ;
+}
+
+:root {
+    --light: #f7f6f6f9;
+    --dark-blue: rgb(5, 5, 82);
+    --light-dark: rgb(74, 90, 90);
+    --light-blue: #0093ff;
+    --light-green: rgba(18, 209, 18, 0.926);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--light);
+    align-items: center;
+    margin-top: 13rem;
+
+}
+
+h1 {
+    color: var(--light);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.todo {
+    width: 700px;
+    text-align: center;
+    background-color: var(--light);
+    box-shadow: 5px 3px 9px grey;
+    border-radius: 0.3rem;
+    /* margin-left: 41px; */
+    margin-top: -68px;
+}
+
+
+
+.header {
+    padding: 40px;
+    border-radius: 0.3rem 0.3rem 0 0;
+    background-color: var(--light-blue)
+}
+
+.todo-input {
+    width: 75%;
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 0.3rem;
+    color: var(--dark-blue);
+    background-color: var(--light);
+}
+
+.add-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.3rem;
+    color: var(--dark-blue);
+    background-color: var(--light);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .5s,
+        color .5s;
+}
+
+.add-btn:hover {
+    background-color: var(--light-green);
+    color: var(--light);
+}
+
+.todo-list {
+    padding: 20px 0;
+   
+}
+.todo-list ul{
+    justify-content: space-between;
+}
+.todo-list h3 {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.p-info {
+    margin-top: 15px;
+     display: none;
+    color: var(--dark-blue);
+}
+
+.todo-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: var(--light);
+    margin: 15px;
+    padding-left: 20px;
+}
+
+.icons button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0.8rem 0.8rem;
+    transition: background-color .5s;
+
+}
+
+.icons button:hover {
+    background-color: #cdc6c6;
+    border-radius: 0.5rem;
+}
+
+.tasks-completed {
+    color: var(-light-dark);
+    text-decoration: line-through;
+    overflow-x: scroll;
+
+}
+
+.complete {
+    color: var(--light-blue);
+    margin-left: 400px;
+
+}
+
+.edit {
+    font-weight: bolder;
+    color: var(--light-green)
+}
+
+.delete {
+    color: rgb(251, 25, 25);
+    
+}
+
+.edit-popup {
+     display: none; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 702px;
+    color: var(--light);
+    background-color: var(--light-dark);
+    border-radius: 0.3rem;
+}
+
+.edit-popup h3 {
+    color: var(--light);
+    font-weight: 900;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 1.2em
+}
+
+.edit-popup-body {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 90%;
+
+
+}
+
+.edit-popup-input {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 0.3rem;
+    color: var(--dark-blue);
+    background-color: var(--light)
+}
+
+.edit-popup button {
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    padding: 0.8rem 4rem;
+    margin: 10px 50px;
+    background-color: var(--light);
+    transition: background-color .5s;
+    border-radius: 0.3rem;
+
+
+}
+
+.submit-btn:hover {
+    background-color: var(--light-green);
+    color: var(--light);
+}
+
+.cancel-btn:hover {
+    background-color: rgb(251, 25, 25);
+    color: var(--light);
+}
